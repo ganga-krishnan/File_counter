@@ -7,14 +7,15 @@ Create a Python script that counts the number of files in a specified directory 
 * Recursively count and print the total number of files with the specified extension in the directory and its subdirectories.
 * Handle cases where the specified directory doesn't exist.
 
-**Submission:** Submit your Python script along with a brief document explaining how to use it and any considerations you took into account.
+**Submission:**    
+Submit your Python script along with a brief document explaining how to use it and any considerations you took into account.
 
 
 
 ### Code with explanation
 
-import os
-
+import os   
+The OS is a module, that provides the facility to establish the interaction between the user and the operating system. Here we need output from the system, so first we import it.
 def count_files_with_extension(directory, ext):
     if not os.path.exists(directory):
         print(f"The directory '{directory}' does not exist.")
